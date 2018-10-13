@@ -19,18 +19,18 @@ namespace PrograAvanzada.Northwind.Products.Model
             this.Products = new HashSet<Product>();
         }
     
-        publicusing Syustem; int SupplierID { get; set; }
-        publicusing Syustem; string CompanyName { get; set; }
-        publicusing Syustem; string ContactName { get; set; }
-        publicusing Syustem; string ContactTitle { get; set; }
-        publicusing Syustem; string Address { get; set; }
-        publicusing Syustem; string City { get; set; }
-        publicusing Syustem; string Region { get; set; }
-        publicusing Syustem; string PostalCode { get; set; }
-        publicusing Syustem; string Country { get; set; }
-        publicusing Syustem; string Phone { get; set; }
-        publicusing Syustem; string Fax { get; set; }
-        publicusing Syustem; string HomePage { get; set; }
+        int SupplierID { get; set; }
+        string CompanyName { get; set; }
+        string ContactName { get; set; }
+        string ContactTitle { get; set; }
+        string Address { get; set; }
+        string City { get; set; }
+        string Region { get; set; }
+        string PostalCode { get; set; }
+        string Country { get; set; }
+        string Phone { get; set; }
+        string Fax { get; set; }
+        string HomePage { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Product> Products { get; set; }

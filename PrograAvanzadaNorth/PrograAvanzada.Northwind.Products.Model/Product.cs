@@ -13,16 +13,16 @@ namespace PrograAvanzada.Northwind.Products.Model
     using System.Collections.Generic;
     [DataContract] public partial class Product
     {
-        publicusing Syustem; int ProductID { get; set; }
-        publicusing Syustem; string ProductName { get; set; }
-        publicusing Syustem; Nullable<int> SupplierID { get; set; }
-        publicusing Syustem; Nullable<int> CategoryID { get; set; }
-        publicusing Syustem; string QuantityPerUnit { get; set; }
-        publicusing Syustem; Nullable<decimal> UnitPrice { get; set; }
-        publicusing Syustem; Nullable<short> UnitsInStock { get; set; }
-        publicusing Syustem; Nullable<short> UnitsOnOrder { get; set; }
-        publicusing Syustem; Nullable<short> ReorderLevel { get; set; }
-        publicusing Syustem; bool Discontinued { get; set; }
+        int ProductID { get; set; }
+        string ProductName { get; set; }
+        Nullable<int> SupplierID { get; set; }
+        Nullable<int> CategoryID { get; set; }
+        string QuantityPerUnit { get; set; }
+        Nullable<decimal> UnitPrice { get; set; }
+        Nullable<short> UnitsInStock { get; set; }
+        Nullable<short> UnitsOnOrder { get; set; }
+        Nullable<short> ReorderLevel { get; set; }
+        bool Discontinued { get; set; }
     
         public virtual Category Category { get; set; }
         public virtual Supplier Supplier { get; set; }
